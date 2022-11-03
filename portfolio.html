@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.css"
+      integrity="sha512-Y0MM+V6ymRKN2zStTqzQ227DWhhp4Mzdo6gnlRnuaNCbc+YN/ZH0sBCLTM4M0oSy9c9VKiCvd4Jk44aCLrNS5Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
+    <title>Портфоліо</title>
+  </head>
+
+  <body>
+    <!-- Шапка сторінки -->
+    <header class="topbar">
+      <div class="container topbar-flex">
+        <nav class="topbar-navigation">
+          <!-- Логотип -->
+          <a href="./index.html" class="logo link-options"
+            ><span class="logo__web">Web</span
+            ><span class="logo__studio-dark">Studio</span></a
+          >
+          <!-- Навігація по сторінці -->
+          <ul class="topbar-navigation__list">
+            <li class="topbar-navigation__group">
+              <a
+                href="./index.html"
+                class="link-options topbar-navigation__link hover-transition"
+                >Студія</a
+              >
+            </li>
+            <li class="topbar-navigation__group">
+              <a
+                href="./portfolio.html"
+                class="link-options topbar-navigation__link hover-transition active-porfolio"
+                >Портфоліо</a
+              >
+            </li>
+            <li class="topbar-navigation__group">
+              <a
+                href="#"
+                class="link-options topbar-navigation__link hover-transition"
+                >Контакти</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <ul class="topbar-contacts__list">
+          <li class="topbar-contacts__group">
+            <a
+              href="mailto:info@devstudio.com"
+              class="link-options topbar-contacts__link hover-transition"
+            >
+              <svg class="topbar-contacts__icon" width="16" height="12">
+                <use href="./images/icomoon/symbol-defs.svg#icon-mail"></use>
+              </svg>
+              info@devstudio.com</a
+            >
+          </li>
+          <li class="topbar-contacts__group">
+            <a
+              href="tel:+380961111111"
+              class="link-options topbar-contacts__link hover-transition"
+            >
+              <svg class="topbar-contacts__icon" width="12" height="16">
+                <use href="./images/icomoon/symbol-defs.svg#icon-tel"></use>
+              </svg>
+              +38 096 111 11 11</a
+            >
+          </li>
+        </ul>
+      </div>
+    </header>
+    <!-- Основний контент сторінки -->
+    <main>
+      <section class="section">
+        <div class="container">
+          <h1 class="hidden">Портфоліо</h1>
+          <ul class="flex-list portfolio-btn__list">
+            <li class="portfolio-btn__item">
+              <button
+                type="button"
+                class="portfolio-btn__button hover-transition"
+              >
+                Усі
+              </button>
+            </li>
+            <li class="portfolio-btn__item">
+              <button
+                type="button"
+                class="portfolio-btn__button hover-transition"
+              >
+                Веб-сайти
+              </button>
+            </li>
+            <li class="portfolio-btn__item">
+              <button
+                type="button"
+                class="portfolio-btn__button hover-transition"
+              >
+                Додатки
+              </button>
+            </li>
+            <li class="portfolio-btn__item">
+              <button
+                type="button"
+                class="portfolio-btn__button hover-transition"
+              >
+                Дизайн
+              </button>
+            </li>
+            <li class="portfolio-btn__item">
+              <button
+                type="button"
+                class="portfolio-btn__button hover-transition"
+              >
+                Маркетинг
+              </button>
+            </li>
+          </ul>
+          <ul class="projects">
+            <li class="projects__item">
+              <a href="#" class="link-options projects__link hover-transition">
+                <div class="projects__image-container hover-transition">
+                  <img
+                    src="./image-porfolio/img-1.jpeg"
+                    alt="image-porfolio"
+                    width="370"
+                    height="295"
+                    class="projects__image"
+                  />
+                  <div class="projects__image-overlay hover-transition">
+                    <p>
+                      Ресурс пропонує комплексні пропозиції з різним рівнем
+                      функціоналу та сервісів. Все це дозволить відвідувачу
+                      отримати вичерпні відомості про компанію чи приватну
+                      особу.
+                    </p>
+                  </div>
+                </div>
+                <div class="projects__image-header">
+                  <h2 class="projects__image-title">Технокряк</h2>
+                  <p class="projects__image-subtitle">Веб-сайт</p>
+                </div>
+              </a>
+            </li>
+            <li class="projects__item">
+              <a href="#" class="link-options projects__link hover-transition">
+                <div class="projects__image-container hover-transition">
+                  <img
+                    src="./image-porfolio/img-2.jpeg"
+                    alt="image-porfolio"
+                    width="370"
+                    height="295"
+                    class="projects__image"
+                  />
+                  <div class="projects__image-overlay hover-transition">
+                    <p>
+                      Ресурс пропонує комплексні пропозиції з різним рівнем
+                      функціоналу та сервісів. Все це дозволить відвідувачу
+                      отримати вичерпні відомості про компанію чи приватну
+                      особу.
+                    </p>
+                  </div>
+                </div>
+                <div class="projects__image-header">
+                  <h2 class="projects__image-title">
+                    Постер New Orlean vs Golden Star
+                  </h2>
+                  <p class="projects__image-subtitle">Дизайн</p>
+                </div>
+              </a>
+            </li>
+            <li class="projects__item">
+              <a href="#" class="link-options projects__link hover-transition">
+                <div class="projects__image-container hover-transition">
+                  <img
+                    src="./image-porfolio/img-3.jpeg"
+                    alt="image-porfolio"
+                    width="370"
+                    height="295"
+                    class="projects__image"
+                  />
+                  <div class="projects__image-overlay hover-transition">
+                    <p>
+                      Ресурс пропонує комплексні пропозиції з різним рівнем
+                      функціоналу та сервісів. Все це дозволить відвідувачу
+                      отримати вичерпні відомості про компанію чи приватну
+                      особу.
+                    </p>
+                  </div>
+                </div>
+                <div class="projects__image-header">
+                  <h2 class="projects__image-title">Ресторан Seafood</h2>
+                  <p class="projects__image-subtitle">Додаток</p>
+                </div>
+              </a>
+            </li>
+            <li class="projects__item">
+              <a href="#" class="link-options projects__link hover-transition">
+                <div class="projects__image-container hover-transition">
+                  <img
+                    src="./image-porfolio/img-4.jpeg"
+                    alt="image-porfolio"
+                    width="370"
+                    height="295"
+                    class="projects__image"
+                  />
+                  <div class="projects__image-overlay hover-transition">
+                    <p>
+                      Ресурс пропонує комплексні пропозиції з різним рівнем
+                      функціоналу та сервісів. Все це дозволить відвідувачу
+                      отримати вичерпні відомості про компанію чи приватну
+                      особу.
+                    </p>
+                  </div>
+                </div>
+                <div class="projects__image-header">
+                  <h2 class="projects__image-title">Проєкт Prime</h2>
+                  <p class="projects__image-subtitle">Маркетинг</p>
+                </div>
+              </a>
+            </li>
+            <li class="projects__item">
+              <a href="#" class="link-options projects__link hover-transition">
+                <div class="projects__image-container hover-transition">
+                  <img
+                    src="./image-porfolio/img-5.jpeg"
+                    alt="image-porfolio"
+                    width="370"
+                    height="295"
+                    class="projects__image"
+                  />
+                  <div class="projects__image-overlay hover-transition">
+                    <p>
+                      Ресурс пропонує комплексні пропозиції з різним рівнем
+                      функціоналу та сервісів. Все це дозволить відвідувачу
+                      отримати вичерпні відомості про компанію чи приватну
+                      особу.
+                    </p>
+                  </div>
+                </div>
+                <div class="projects__image-header">
+                  <h2 class="projects__image-title">Проєкт Boxes</h2>
+                  <p class="projects__image-subtitle">Додаток</p>
+                </div>
+              </a>
+            </li>
+            <li class="projects__item">
+              <a href="#" class="link-options projects__link hover-transition">
+                <div class="projects__image-container hover-transition">
+                  <img
+                    src="./image-porfolio/img-6.jpeg"
+                    alt="image-porfolio"
+                    width="370"
+                    height="295"
+                    class="projects__image"
+                  />
+                  <div class="projects__image-overlay hover-transition">
+                    <p>
+                      Ресурс пропонує комплексні пропозиції з різним рівнем
+                      функціоналу та сервісів. Все це дозволить відвідувачу
+                      отримати вичерпні відомості про компанію чи приватну
+                      особу.
+                    </p>
+                  </div>
+                </div>
+                <div class="projects__image-header">
+                  <h2 class="projects__image-title">
+                    Inspiration has no Borders
+                  </h2>
+                  <p class="projects__image-subtitle">Веб-сайт</p>
+                </div>
+              </a>
+            </li>
+            <li class="projects__item">
+              <a href="#" class="link-options projects__link hover-transition">
+                <div class="projects__image-container hover-transition">
+                  <img
+                    src="./image-porfolio/img-7.jpeg"
+                    alt="image-porfolio"
+                    width="370"
+                    height="295"
+                    class="projects__image"
+                  />
+                  <div class="projects__image-overlay hover-transition">
+                    <p>
+                      Ресурс пропонує комплексні пропозиції з різним рівнем
+                      функціоналу та сервісів. Все це дозволить відвідувачу
+                      отримати вичерпні відомості про компанію чи приватну
+                      особу.
+                    </p>
+                  </div>
+                </div>
+                <div class="projects__image-header">
+                  <h2 class="projects__image-title">Видання Limited Edition</h2>
+                  <p class="projects__image-subtitle">Дизайн</p>
+                </div>
+              </a>
+            </li>
+            <li class="projects__item">
+              <a href="#" class="link-options projects__link hover-transition">
+                <div class="projects__image-container hover-transition">
+                  <img
+                    src="./image-porfolio/img-8.jpeg"
+                    alt="image-porfolio"
+                    width="370"
+                    height="295"
+                    class="projects__image"
+                  />
+                  <div class="projects__image-overlay hover-transition">
+                    <p>
+                      Ресурс пропонує комплексні пропозиції з різним рівнем
+                      функціоналу та сервісів. Все це дозволить відвідувачу
+                      отримати вичерпні відомості про компанію чи приватну
+                      особу.
+                    </p>
+                  </div>
+                </div>
+                <div class="projects__image-header">
+                  <h2 class="projects__image-title">Проєкт LAB</h2>
+                  <p class="projects__image-subtitle">Маркетинг</p>
+                </div>
+              </a>
+            </li>
+            <li class="projects__item">
+              <a href="#" class="link-options projects__link hover-transition">
+                <div class="projects__image-container hover-transition">
+                  <img
+                    src="./image-porfolio/img-9.jpeg"
+                    alt="image-porfolio"
+                    width="370"
+                    height="295"
+                    class="projects__image"
+                  />
+                  <div class="projects__image-overlay hover-transition">
+                    <p>
+                      Ресурс пропонує комплексні пропозиції з різним рівнем
+                      функціоналу та сервісів. Все це дозволить відвідувачу
+                      отримати вичерпні відомості про компанію чи приватну
+                      особу.
+                    </p>
+                  </div>
+                </div>
+                <div class="projects__image-header">
+                  <h2 class="projects__image-title">Growing Business</h2>
+                  <p class="projects__image-subtitle">Додаток</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <!-- Підвал сторінки -->
+    <footer class="basement">
+      <div class="container basement-container">
+        <div class="basement-con">
+          <a href="./index.html" class="logo link-options logo-basement"
+            ><span class="logo__web">Web</span
+            ><span class="logo__studio-white">Studio</span></a
+          >
+          <address class="basement-contacts">
+            <ul class="basement-contacts__list">
+              <li class="basement-contacts__item">
+                <a
+                  href="https://goo.gl/maps/L8f5SfHQkq7jRVht7"
+                  class="basement-contacts__link link-options basement-contacts-address hover-transition"
+                  >м. Київ, пр-т Лесі Українки, 26
+                </a>
+              </li>
+              <li class="basement-contacts__item">
+                <a
+                  href="mailto:info@devstudio.com"
+                  class="basement-contacts__link link-options basement-contacts-mail hover-transition"
+                  >info@devstudio.com
+                </a>
+              </li>
+              <li class="basement-contacts__item">
+                <a
+                  href="tel:+380961111111"
+                  class="basement-contacts__link link-options basement-contacts-tel hover-transition"
+                  >+38 096 111 11 11
+                </a>
+              </li>
+            </ul>
+          </address>
+        </div>
+        <div class="basement-social">
+          <p class="basement__subtitle">приєднуйтесь</p>
+          <ul class="basement-social__list">
+            <li class="basement-social__item">
+              <a
+                href="#"
+                class="link-options basement-social__link hover-transition"
+              >
+                <svg class="basement-social__icon" width="20" height="20">
+                  <use
+                    href="./images/icomoon/symbol-defs.svg#icon-instagram"
+                  ></use>
+                </svg>
+              </a>
+            </li>
+            <li class="basement-social__item">
+              <a
+                href="#"
+                class="link-options basement-social__link hover-transition"
+              >
+                <svg class="basement-social__icon" width="20" height="20">
+                  <use
+                    href="./images/icomoon/symbol-defs.svg#icon-twitter"
+                  ></use>
+                </svg>
+              </a>
+            </li>
+            <li class="basement-social__item">
+              <a
+                href="#"
+                class="basement-social__link link-options hover-transition"
+              >
+                <svg class="basement-social__icon" width="20" height="20">
+                  <use
+                    href="./images/icomoon/symbol-defs.svg#icon-facebook"
+                  ></use>
+                </svg>
+              </a>
+            </li>
+            <li class="basement-social__item">
+              <a
+                href="#"
+                class="basement-social__link link-options hover-transition"
+              >
+                <svg class="basement-social__icon" width="20" height="20">
+                  <use
+                    href="./images/icomoon/symbol-defs.svg#icon-linkedin"
+                  ></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <form class="basement-submit" name="signup_form" autocomplete="on">
+          <p class="basement__subtitle">підпишіться на розсилку</p>
+          <div class="basement-submit__container">
+            <label class="basement-submit__label">
+              <input
+                class="basement-submit__input"
+                type="email"
+                name="email"
+                placeholder="E-mail"
+                id="user_email"
+              />
+            </label>
+            <button
+              type="submit"
+              class="basement-submit__button main-button hover-transition"
+            >
+              Підписатися<svg
+                class="basement-submit__icon"
+                width="24"
+                height="24"
+              >
+                <use
+                  href="./images/icomoon/symbol-defs.svg#icon-icon-send"
+                ></use>
+              </svg>
+            </button>
+          </div>
+        </form>
+      </div>
+    </footer>
+  </body>
+</html>

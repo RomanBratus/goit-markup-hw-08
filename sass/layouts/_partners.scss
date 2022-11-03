@@ -1,0 +1,28 @@
+.partners__list {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+/* .partners__item{} */
+
+.partners__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  border: 1px solid var(--social-main-color);
+  border-radius: 4px;
+  width: 170px;
+  height: 92px;
+  fill: var(--social-main-color);
+
+  &:hover,
+  &:focus {
+    fill: var(--text-hover-color);
+    border: 1px solid var(--text-hover-color);
+  }
+}
+
+/* .partners__icon{} */

@@ -1,0 +1,34 @@
+/* "web" and "studio" style logo (in header and footer) */
+.logo {
+  font-family: "Raleway", sans-serif;
+  padding-top: 24px;
+  padding-bottom: 25px;
+}
+
+/* options font LOGO (located in header and footer) */
+.logo__web,
+.logo__studio-white,
+.logo__studio-dark {
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+}
+
+/* options for tex "web" in logo */
+.logo__web {
+  color: var(--text-hover-color);
+}
+/* options for tex "studio" in header logo */
+.logo__studio-dark {
+  color: var(--primery-text-color);
+}
+/* options for tex "studio" in footer logo */
+.logo__studio-white{
+  color: var(--additional-text-color);
+}
+
+.logo-basement {
+  display: block;
+  padding: 0;
+}
+

@@ -1,0 +1,786 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.css"
+      integrity="sha512-Y0MM+V6ymRKN2zStTqzQ227DWhhp4Mzdo6gnlRnuaNCbc+YN/ZH0sBCLTM4M0oSy9c9VKiCvd4Jk44aCLrNS5Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
+    <title>Студія</title>
+  </head>
+
+  <body>
+    <!-- Шапка сторінки -->
+    <header class="topbar">
+      <div class="container topbar-flex">
+        <nav class="topbar-navigation">
+          <!-- Логотип -->
+          <a href="./index.html" class="logo link-options"
+            ><span class="logo__web">Web</span
+            ><span class="logo__studio-dark">Studio</span></a
+          >
+          <!-- Навігація по сторінці -->
+          <ul class="topbar-navigation__list">
+            <li class="topbar-navigation__group">
+              <a
+                href="./index.html"
+                class="link-options topbar-navigation__link hover-transition active-main"
+                >Студія</a
+              >
+            </li>
+            <li class="topbar-navigation__group">
+              <a
+                href="./portfolio.html"
+                class="link-options topbar-navigation__link hover-transition"
+                >Портфоліо</a
+              >
+            </li>
+            <li class="topbar-navigation__group">
+              <a
+                href="#"
+                class="link-options topbar-navigation__link hover-transition"
+                >Контакти</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <ul class="topbar-contacts__list">
+          <li class="topbar-contacts__group">
+            <a
+              href="mailto:info@devstudio.com"
+              class="link-options topbar-contacts__link hover-transition"
+            >
+              <svg class="topbar-contacts__icon" width="16" height="12">
+                <use href="./images/icomoon/symbol-defs.svg#icon-mail"></use>
+              </svg>
+              info@devstudio.com</a
+            >
+          </li>
+          <li class="topbar-contacts__group">
+            <a
+              href="tel:+380961111111"
+              class="link-options topbar-contacts__link hover-transition"
+            >
+              <svg class="topbar-contacts__icon" width="12" height="16">
+                <use href="./images/icomoon/symbol-defs.svg#icon-tel"></use>
+              </svg>
+              +38 096 111 11 11</a
+            >
+          </li>
+        </ul>
+      </div>
+    </header>
+    <!-- Основний контент сторінки -->
+    <main>
+      <!-- Головний банер -->
+      <section class="hero">
+        <div class="container hero-container">
+          <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
+          <div class="hero-button">
+            <button
+              type="button"
+              class="main-button hover-transition"
+              data-modal-open
+            >
+              Замовити послугу
+            </button>
+            <!-- Приховане вікно з формою -->
+            <div class="backdrop is-hidden" data-modal>
+              <div class="modal-window">
+                <button type="button" class="close-button" data-modal-close>
+                  <svg class="modal-icon" width="18" height="18">
+                    <use
+                      href="./images/icomoon/symbol-defs.svg#icon-close-btn"
+                    ></use>
+                  </svg>
+                </button>
+                <p class="modal-title">
+                  Залиште свої дані, ми вам передзвонимо
+                </p>
+                <form name="signup_form" autocomplete="on">
+                  <div class="modal-group">
+                    <div class="modal-list">
+                      <label class="modal-label" for="user-name">Ім'я</label>
+                      <div class="input-container">
+                        <input
+                          class="modal-input"
+                          type="text"
+                          name="user-name"
+                          id="user-name"
+                          required
+                        />
+                        <svg class="modal-input-icon" width="18" height="18">
+                          <use
+                            href="./images/icomoon/symbol-defs.svg#icon-person-black"
+                          ></use>
+                        </svg>
+                      </div>
+                    </div>
+                    <div class="modal-list">
+                      <label class="modal-label" for="phone-number"
+                        >Телефон
+                      </label>
+                      <div class="input-container">
+                        <input
+                          class="modal-input"
+                          type="tel"
+                          name="phone-number"
+                          id="phone-number"
+                          required
+                        />
+                        <svg class="modal-input-icon" width="18" height="18">
+                          <use
+                            href="./images/icomoon/symbol-defs.svg#icon-phone-black"
+                          ></use>
+                        </svg>
+                      </div>
+                    </div>
+                    <div class="modal-list">
+                      <label class="modal-label" for="user-email">Пошта</label>
+                      <div class="input-container">
+                        <input
+                          class="modal-input"
+                          type="email"
+                          name="user-email"
+                          id="user-email"
+                          required
+                        />
+                        <svg class="modal-input-icon" width="18" height="18">
+                          <use
+                            href="./images/icomoon/symbol-defs.svg#icon-email-black"
+                          ></use>
+                        </svg>
+                      </div>
+                    </div>
+                    <div class="modal-list">
+                      <label class="modal-label" for="user-comment"
+                        >Коментар</label
+                      >
+                      <textarea
+                        class="modal-comment"
+                        name="user-comment"
+                        placeholder="Введіть текст"
+                        rows="8"
+                      ></textarea>
+                    </div>
+                  </div>
+                  <div class="modal-licence">
+                    <label class="licence-checkbox">
+                      <input
+                        type="checkbox"
+                        name="licence"
+                        class="checkbox hover-transition"
+                      />
+                      <span class="custom-checkbox hover-transition">
+                        <svg class="checkbox-input-icon" width="16" height="15">
+                          <use
+                            href="./images/icomoon/symbol-defs.svg#icon-icon-check"
+                          ></use>
+                        </svg>
+                      </span>
+                      <p class="licence-text">
+                        Погоджуюся з розсилкою та приймаю
+                        <a href="#" class="link-options licence"
+                          >Умови договору</a
+                        >
+                      </p>
+                    </label>
+                  </div>
+                  <div class="modal-container-btn">
+                    <button
+                      type="submit"
+                      class="modal-submit-btn main-button hover-transition"
+                    >
+                      Відправити
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Текст під банером -->
+      <section class="our-features">
+        <div class="container">
+          <h2 class="hidden">наші особливості</h2>
+          <ul class="our-features-list">
+            <li class="our-features-group">
+              <div class="our-icons-group">
+                <svg class="our-features-icon" width="70" height="70">
+                  <use
+                    href="./images/icomoon/symbol-defs.svg#icon-antenna"
+                  ></use>
+                </svg>
+              </div>
+              <h3 class="our-features-title">увага до деталей</h3>
+              <p class="our-features-text">
+                Ідейні міркування, і навіть початок повсякденної роботи з
+                формування позиції.
+              </p>
+            </li>
+            <li class="our-features-group">
+              <div class="our-icons-group">
+                <svg class="our-features-icon" width="70" height="70">
+                  <use href="./images/icomoon/symbol-defs.svg#icon-clock"></use>
+                </svg>
+              </div>
+              <h3 class="our-features-title">пунктуальність</h3>
+              <p class="our-features-text">
+                Завдання організації, особливо рамки і місце навчання кадрів
+                тягне у себе.
+              </p>
+            </li>
+            <li class="our-features-group">
+              <div class="our-icons-group">
+                <svg class="our-features-icon" width="70" height="70">
+                  <use
+                    href="./images/icomoon/symbol-defs.svg#icon-diagram"
+                  ></use>
+                </svg>
+              </div>
+              <h3 class="our-features-title">планування</h3>
+              <p class="our-features-text">
+                Так само консультація з широким активом значною мірою зумовлює.
+              </p>
+            </li>
+            <li class="our-features-group">
+              <div class="our-icons-group">
+                <svg class="our-features-icon" width="70" height="70">
+                  <use
+                    href="./images/icomoon/symbol-defs.svg#icon-astronaut"
+                  ></use>
+                </svg>
+              </div>
+              <h3 class="our-features-title">сучасні технології</h3>
+              <p class="our-features-text">
+                Значимість цих проблем настільки очевидна, що реалізація
+                планових завдань.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!--  Чим займаємося -->
+      <section class="img-section section">
+        <div class="container img-container">
+          <h2 class="img-section-title">Чим займаємося</h2>
+          <ul class="img-section__group">
+            <li class="img-section__list">
+              <div class="img-section__position">
+                <img
+                  src="images/img-1.jpeg"
+                  alt="програміст працює за робочим столом"
+                  width="370"
+                  height="294"
+                  class="img-section__picture"
+                />
+                <p class="img-section__label">Десктопні додатки</p>
+              </div>
+            </li>
+            <li class="img-section__list">
+              <div class="img-section__position">
+                <img
+                  src="images/img-2.jpeg"
+                  alt="програміст створює дизайн для мобільних додатків"
+                  width="370"
+                  height="294"
+                  class="img-section__picture"
+                />
+                <p class="img-section__label">Мобільні додатки</p>
+              </div>
+            </li>
+            <li class="img-section__list">
+              <div class="img-section__position">
+                <img
+                  src="images/img-3.jpeg"
+                  alt="креативний веб дизайнер"
+                  width="370"
+                  height="294"
+                  class="img-section__picture"
+                />
+                <p class="img-section__label">Дизайнерські рішення</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Наша команда -->
+      <section class="our-team section">
+        <div class="container our-team-container">
+          <h2 class="our-team-title">Наша команда</h2>
+          <ul class="our-team-group">
+            <li class="our-team-group__list">
+              <img
+                src="images/pic-0.jpeg"
+                alt="Ігор Дем'яненко"
+                width="270"
+                height="260"
+                class="our-team-group__img"
+              />
+              <div class="our-team__img-text">
+                <h3 class="our-team__subtitle">Ігор Дем'яненко</h3>
+                <p class="our-team__text">Product Designer</p>
+                <ul class="soc-group">
+                  <li class="soc-list">
+                    <a
+                      href="#"
+                      class="social-link link-options hover-transition"
+                    >
+                      <svg class="social-link-icon" width="20" height="20">
+                        <use
+                          href="./images/icomoon/symbol-defs.svg#icon-instagram"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="soc-list">
+                    <a
+                      href="#"
+                      class="social-link link-options hover-transition"
+                    >
+                      <svg class="social-link-icon" width="20" height="20">
+                        <use
+                          href="./images/icomoon/symbol-defs.svg#icon-twitter"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="soc-list">
+                    <a
+                      href="#"
+                      class="social-link link-options hover-transition"
+                    >
+                      <svg class="social-link-icon" width="20" height="20">
+                        <use
+                          href="./images/icomoon/symbol-defs.svg#icon-facebook"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="soc-list">
+                    <a
+                      href="#"
+                      class="social-link link-options hover-transition"
+                    >
+                      <svg class="social-link-icon" width="20" height="20">
+                        <use
+                          href="./images/icomoon/symbol-defs.svg#icon-linkedin"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="our-team-group__list">
+              <img
+                src="images/pic-1.jpeg"
+                alt="Ольга Рєпіна"
+                width="270"
+                height="260"
+                class="our-team-group__img"
+              />
+              <div class="our-team__img-text">
+                <h3 class="our-team__subtitle">Ольга Рєпіна</h3>
+                <p class="our-team__text">Frontend Developer</p>
+                <ul class="soc-group">
+                  <li class="soc-list">
+                    <a
+                      href="#"
+                      class="social-link link-options hover-transition"
+                    >
+                      <svg class="social-link-icon" width="20" height="20">
+                        <use
+                          href="./images/icomoon/symbol-defs.svg#icon-instagram"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="soc-list">
+                    <a
+                      href="#"
+                      class="social-link link-options hover-transition"
+                    >
+                      <svg class="social-link-icon" width="20" height="20">
+                        <use
+                          href="./images/icomoon/symbol-defs.svg#icon-twitter"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="soc-list">
+                    <a
+                      href="#"
+                      class="social-link link-options hover-transition"
+                    >
+                      <svg class="social-link-icon" width="20" height="20">
+                        <use
+                          href="./images/icomoon/symbol-defs.svg#icon-facebook"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="soc-list">
+                    <a
+                      href="#"
+                      class="social-link link-options hover-transition"
+                    >
+                      <svg class="social-link-icon" width="20" height="20">
+                        <use
+                          href="./images/icomoon/symbol-defs.svg#icon-linkedin"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="our-team-group__list">
+              <img
+                src="images/pic-2.jpeg"
+                alt="Микола Тарасов"
+                width="270"
+                height="260"
+                class="our-team-group__img"
+              />
+              <div class="our-team__img-text">
+                <h3 class="our-team__subtitle">Микола Тарасов</h3>
+                <p class="our-team__text">Marketing</p>
+                <ul class="soc-group">
+                  <li class="soc-list">
+                    <a
+                      href="#"
+                      class="social-link link-options hover-transition"
+                    >
+                      <svg class="social-link-icon" width="20" height="20">
+                        <use
+                          href="./images/icomoon/symbol-defs.svg#icon-instagram"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="soc-list">
+                    <a
+                      href="#"
+                      class="social-link link-options hover-transition"
+                    >
+                      <svg class="social-link-icon" width="20" height="20">
+                        <use
+                          href="./images/icomoon/symbol-defs.svg#icon-twitter"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="soc-list">
+                    <a
+                      href="#"
+                      class="social-link link-options hover-transition"
+                    >
+                      <svg class="social-link-icon" width="20" height="20">
+                        <use
+                          href="./images/icomoon/symbol-defs.svg#icon-facebook"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="soc-list">
+                    <a
+                      href="#"
+                      class="social-link link-options hover-transition"
+                    >
+                      <svg class="social-link-icon" width="20" height="20">
+                        <use
+                          href="./images/icomoon/symbol-defs.svg#icon-linkedin"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="our-team-group__list">
+              <img
+                src="images/pic-3.jpeg"
+                alt="Михайло Єрмаков"
+                width="270"
+                height="260"
+                class="our-team-group__img"
+              />
+              <div class="our-team__img-text">
+                <h3 class="our-team__subtitle">Михайло Єрмаков</h3>
+                <p class="our-team__text">UI Designer</p>
+                <ul class="soc-group">
+                  <li class="soc-list">
+                    <a
+                      href="#"
+                      class="social-link link-options hover-transition"
+                    >
+                      <svg class="social-link-icon" width="20" height="20">
+                        <use
+                          href="./images/icomoon/symbol-defs.svg#icon-instagram"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="soc-list">
+                    <a
+                      href="#"
+                      class="social-link link-options hover-transition"
+                    >
+                      <svg class="social-link-icon" width="20" height="20">
+                        <use
+                          href="./images/icomoon/symbol-defs.svg#icon-twitter"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="soc-list">
+                    <a
+                      href="#"
+                      class="social-link link-options hover-transition"
+                    >
+                      <svg class="social-link-icon" width="20" height="20">
+                        <use
+                          href="./images/icomoon/symbol-defs.svg#icon-facebook"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="soc-list">
+                    <a
+                      href="#"
+                      class="social-link link-options hover-transition"
+                    >
+                      <svg class="social-link-icon" width="20" height="20">
+                        <use
+                          href="./images/icomoon/symbol-defs.svg#icon-linkedin"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <!-- Постійні клієнти -->
+    <section class="partners section">
+      <div class="container">
+        <h2 class="partners-title">Постійні клієнти</h2>
+        <ul class="partners__list">
+          <li class="partners__item">
+            <a
+              href="#"
+              class="link-options partners__link hover-transition"
+            >
+              <svg class="partners__icon" width="106" height="60">
+                <use
+                  href="./images/icomoon/symbol-defs.svg#icon-client-logo-1"
+                ></use>
+              </svg>
+            </a>
+          </li>
+          <li class="partners__item">
+            <a
+              href="#"
+              class="link-options partners__link hover-transition"
+            >
+              <svg class="partners__icon" width="106" height="60">
+                <use
+                  href="./images/icomoon/symbol-defs.svg#icon-client-logo-2"
+                ></use>
+              </svg>
+            </a>
+          </li>
+          <li class="partners__item">
+            <a
+              href="#"
+              class="link-options partners__link hover-transition"
+            >
+              <svg class="partners__icon" width="106" height="60">
+                <use
+                  href="./images/icomoon/symbol-defs.svg#icon-client-logo-3"
+                ></use>
+              </svg>
+            </a>
+          </li>
+          <li class="partners__item">
+            <a
+              href="#"
+              class="link-options partners__link hover-transition"
+            >
+              <svg class="partners__icon" width="106" height="60">
+                <use
+                  href="./images/icomoon/symbol-defs.svg#icon-client-logo-4"
+                ></use>
+              </svg>
+            </a>
+          </li>
+          <li class="partners__item">
+            <a
+              href="#"
+              class="link-options partners__link hover-transition"
+            >
+              <svg class="partners__icon" width="106" height="60">
+                <use
+                  href="./images/icomoon/symbol-defs.svg#icon-client-logo-5"
+                ></use>
+              </svg>
+            </a>
+          </li>
+          <li class="partners__item">
+            <a
+              href="#"
+              class="link-options partners__link hover-transition"
+            >
+              <svg class="partners__icon" width="106" height="60">
+                <use
+                  href="./images/icomoon/symbol-defs.svg#icon-client-logo-6"
+                ></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Підвал сторінки -->
+    <footer class="basement">
+      <div class="container basement-container">
+        <div class="basement-con">
+          <a href="./index.html" class="logo link-options logo-basement"
+            ><span class="logo__web">Web</span
+            ><span class="logo__studio-white">Studio</span></a
+          >
+          <address class="basement-contacts">
+            <ul class="basement-contacts__list">
+              <li class="basement-contacts__item">
+                <a
+                  href="https://goo.gl/maps/L8f5SfHQkq7jRVht7"
+                  class="basement-contacts__link link-options basement-contacts-address hover-transition"
+                  >м. Київ, пр-т Лесі Українки, 26
+                </a>
+              </li>
+              <li class="basement-contacts__item">
+                <a
+                  href="mailto:info@devstudio.com"
+                  class="basement-contacts__link link-options basement-contacts-mail hover-transition"
+                  >info@devstudio.com
+                </a>
+              </li>
+              <li class="basement-contacts__item">
+                <a
+                  href="tel:+380961111111"
+                  class="basement-contacts__link link-options basement-contacts-tel hover-transition"
+                  >+38 096 111 11 11
+                </a>
+              </li>
+            </ul>
+          </address>
+        </div>
+        <div class="basement-social">
+          <p class="basement__subtitle">приєднуйтесь</p>
+          <ul class="basement-social__list">
+            <li class="basement-social__item">
+              <a
+                href="#"
+                class="link-options basement-social__link hover-transition"
+              >
+                <svg class="basement-social__icon" width="20" height="20">
+                  <use
+                    href="./images/icomoon/symbol-defs.svg#icon-instagram"
+                  ></use>
+                </svg>
+              </a>
+            </li>
+            <li class="basement-social__item">
+              <a
+                href="#"
+                class="link-options basement-social__link hover-transition"
+              >
+                <svg class="basement-social__icon" width="20" height="20">
+                  <use
+                    href="./images/icomoon/symbol-defs.svg#icon-twitter"
+                  ></use>
+                </svg>
+              </a>
+            </li>
+            <li class="basement-social__item">
+              <a
+                href="#"
+                class="basement-social__link link-options hover-transition"
+              >
+                <svg class="basement-social__icon" width="20" height="20">
+                  <use
+                    href="./images/icomoon/symbol-defs.svg#icon-facebook"
+                  ></use>
+                </svg>
+              </a>
+            </li>
+            <li class="basement-social__item">
+              <a
+                href="#"
+                class="basement-social__link link-options hover-transition"
+              >
+                <svg class="basement-social__icon" width="20" height="20">
+                  <use
+                    href="./images/icomoon/symbol-defs.svg#icon-linkedin"
+                  ></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <form class="basement-submit" name="signup_form" autocomplete="on">
+          <p class="basement__subtitle">підпишіться на розсилку</p>
+          <div class="basement-submit__container">
+            <label class="basement-submit__label">
+              <input
+                class="basement-submit__input"
+                type="email"
+                name="email"
+                placeholder="E-mail"
+                id="user_email"
+              />
+            </label>
+            <button
+              type="submit"
+              class="basement-submit__button main-button hover-transition"
+            >
+              Підписатися<svg
+                class="basement-submit__icon"
+                width="24"
+                height="24"
+              >
+                <use
+                  href="./images/icomoon/symbol-defs.svg#icon-icon-send"
+                ></use>
+              </svg>
+            </button>
+          </div>
+        </form>
+      </div>
+    </footer>
+
+    <script src="./js/modal.js"></script>
+  </body>
+</html>
