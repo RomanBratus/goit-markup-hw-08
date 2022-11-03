@@ -6,11 +6,13 @@
 .our-features-list {
   list-style: none;
   display: flex;
+  
   gap: 30px;
 }
 
 .our-features-group {
-  flex-basis: calc((100% - 90px) / 4);
+  /*   flex-basis: calc((100% - 90px) / 4); */
+  width: 100%;
 }
 
 .our-icons-group {

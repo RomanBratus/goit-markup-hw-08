@@ -314,7 +314,7 @@ ol {
 }
 
 .container {
-  width: 1200px;
+  width: 100%;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
@@ -679,7 +679,8 @@ ol {
 }
 
 .our-features-group {
-  flex-basis: calc((100% - 90px) / 4);
+  /*   flex-basis: calc((100% - 90px) / 4); */
+  width: 100%;
 }
 
 .our-icons-group {
