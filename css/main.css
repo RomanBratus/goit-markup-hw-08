@@ -976,13 +976,28 @@ img {
   fill: var(--background-color-special);
 }
 
+.section {
+  padding: 60px 0;
+}
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 94px;
+  }
+}
+
 /* button list options (налаштування списка кнопок) */
 .portfolio-btn__list {
   list-style: none;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   gap: 8px;
   margin-bottom: 50px;
+}
+@media screen and (min-width: 768px) {
+  .portfolio-btn__list {
+    flex-basis: calc((100% - 32px) / 5);
+  }
 }
 
 /* .portfolio-btn__item {} */
@@ -1012,7 +1027,23 @@ img {
 }
 
 .projects__item {
-  flex-basis: calc((100% - 60px) / 3);
+  /*   flex-basis: calc((100% - 60px) / 3); */
+  width: 100%;
+}
+@media screen and (min-width: 480px) {
+  .projects__item {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .projects__item {
+    flex-basis: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .projects__item {
+    flex-basis: calc((100% - 60px) / 3);
+  }
 }
 
 .projects__link {
