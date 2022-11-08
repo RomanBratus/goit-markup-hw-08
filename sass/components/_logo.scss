@@ -10,8 +10,13 @@
 .logo__studio-white,
 .logo__studio-dark {
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
+  font-size: 24px;
+  line-height: 1.16;
+
+  @media screen and(min-width: 1200px) {
+    font-size: 26px;
+    line-height: 1.19;
+  }
 }
 
 /* options for tex "web" in logo */
@@ -23,7 +28,7 @@
   color: var(--primery-text-color);
 }
 /* options for tex "studio" in footer logo */
-.logo__studio-white{
+.logo__studio-white {
   color: var(--additional-text-color);
 }
 
@@ -36,4 +41,3 @@
     text-align: left;
   }
 }
-

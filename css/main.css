@@ -121,6 +121,26 @@ img {
   text-align: center;
 }
 
+/* title in section 3 and 4  */
+.img-section-title,
+.our-team-title,
+.partners-title {
+  color: var(--primery-text-color);
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.14;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+@media screen and (min-width: 1200px) {
+  .img-section-title,
+.our-team-title,
+.partners-title {
+    font-size: 36px;
+    line-height: 1.16;
+  }
+}
+
 .our-features-title,
 .img-section__label,
 .basement__subtitle {
@@ -281,8 +301,16 @@ img {
 .logo__studio-white,
 .logo__studio-dark {
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
+  font-size: 24px;
+  line-height: 1.16;
+}
+@media screen and (min-width: 1200px) {
+  .logo__web,
+.logo__studio-white,
+.logo__studio-dark {
+    font-size: 26px;
+    line-height: 1.19;
+  }
 }
 
 /* options for tex "web" in logo */
@@ -354,12 +382,6 @@ img {
 .img-section-title,
 .our-team-title,
 .partners-title {
-  color: var(--primery-text-color);
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
-  text-align: center;
-  letter-spacing: 0.03em;
   /* position */
   box-sizing: border-box;
   margin-bottom: 50px;
@@ -386,11 +408,16 @@ img {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 528px;
+  width: 450px;
   background-color: var(--additional-text-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   padding: 40px;
+}
+@media screen and (min-width: 1200px) {
+  .modal-window {
+    width: 528px;
+  }
 }
 
 .close-button {
