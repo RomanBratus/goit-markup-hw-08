@@ -10,17 +10,28 @@
   justify-content: center;
 }
 
-
-
 .topbar-contacts__link {
   display: flex;
   align-items: center;
 }
 
-.topbar-navigation__list,
+.topbar-navigation__list {
+  list-style: none;
+  display: flex;
+}
+
 .topbar-contacts__list {
   list-style: none;
   display: flex;
+  flex-direction: column;
+}
+
+.topbar-navigation__list,
+.topbar-contacts__list {
+  @media screen and(min-width: 1200px) {
+    list-style: none;
+    flex-direction: row;
+  }
 }
 
 /* ---------------------------- header navigation ---------------------------- */
@@ -43,14 +54,16 @@
 /* header navigation link options (налаштування рядків списку навігації) */
 // *- налаштування тексту в variables.scss //
 .topbar-navigation__link {
-  padding-top: 32px;
-  padding-bottom: 32px;
-
   position: relative;
 
   &:hover,
   &:focus {
     color: var(--text-hover-color);
+  }
+
+  @media screen and(min-width: 1200px) {
+    padding-top: 32px;
+    padding-bottom: 32px;
   }
 }
 
@@ -86,8 +99,10 @@
 
 /* ----------------------------- header contacts ----------------------------- */
 .topbar-contacts__list {
-  gap: 50px;
-  margin-left: auto;
+  @media screen and(min-width: 1200px) {
+    gap: 50px;
+    margin-left: auto;
+  }
 }
 
 /* header contacts list options (налаштування списку контактів) */
