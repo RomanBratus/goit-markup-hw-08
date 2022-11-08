@@ -129,12 +129,13 @@ img {
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  text-align: center;
 }
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 1200px) {
   .our-features-title,
 .img-section__label,
 .basement__subtitle {
-    text-align: center;
+    text-align: left;
   }
 }
 
@@ -301,7 +302,13 @@ img {
 
 .logo-basement {
   display: block;
+  text-align: center;
   padding: 0;
+}
+@media screen and (min-width: 1200px) {
+  .logo-basement {
+    text-align: left;
+  }
 }
 
 .soc-group,
@@ -930,7 +937,23 @@ img {
 
 .basement-container {
   display: flex;
-  align-items: baseline;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+}
+@media screen and (min-width: 768px) {
+  .basement-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .basement-container {
+    flex-direction: row;
+    align-items: baseline;
+    gap: 0;
+  }
 }
 
 /* footer list options (налаштування списку в підвалі) */
@@ -940,7 +963,13 @@ img {
 
 .basement-contacts__list {
   display: inline;
+  text-align: center;
   list-style: none;
+}
+@media screen and (min-width: 1200px) {
+  .basement-contacts__list {
+    text-align: left;
+  }
 }
 
 .basement-contacts__item {
@@ -956,31 +985,68 @@ img {
   display: block;
   width: 206px;
   height: 80px;
-  margin-left: 70px;
+}
+@media screen and (min-width: 1200px) {
+  .basement-social {
+    margin-left: 70px;
+  }
 }
 
 .basement-submit {
-  display: block;
-  width: 570px;
-  height: 86px;
-  margin-left: 93px;
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (min-width: 480px) {
+  .basement-submit {
+    width: 450px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .basement-submit {
+    width: 570px;
+    height: 86px;
+    margin-left: 93px;
+  }
 }
 
 .basement-submit__container {
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+@media screen and (min-width: 1200px) {
+  .basement-submit__container {
+    flex-direction: row;
+    gap: 0;
+  }
 }
 
-/* .basement-submit__label{} */
+.basement-submit__label {
+  display: flex;
+}
+
 .basement-submit__input {
   background-color: transparent;
   align-content: center;
   height: 50px;
-  width: 358px;
+  width: 300px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
-  margin-right: 12px;
   padding-left: 16px;
+}
+@media screen and (min-width: 480px) {
+  .basement-submit__input {
+    width: 450px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .basement-submit__input {
+    width: 358px;
+    margin-right: 12px;
+  }
 }
 
 .basement-submit__button {
