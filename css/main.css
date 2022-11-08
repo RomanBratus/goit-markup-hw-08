@@ -90,11 +90,25 @@ img {
 .hero-title {
   color: var(--additional-text-color);
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 26px;
+  line-height: 1.6;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+}
+@media screen and (min-width: 480px) {
+  .hero-title {
+    width: 360px;
+    height: 84px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero-title {
+    font-size: 44px;
+    line-height: 1.36;
+    width: 969px;
+    height: 120px;
+  }
 }
 
 .main-button {
@@ -675,12 +689,19 @@ img {
 .hero {
   background-color: var(--background-color-additional);
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bg.jpeg);
-  background-size: 1600px;
   background-repeat: no-repeat;
   background-position: center;
-  /*     background-size: cover; */
-  padding-top: 200px;
-  padding-bottom: 200px;
+  background-size: cover;
+  /*   padding-top: 200px;
+  padding-bottom: 200px; */
+  padding: 118px 0;
+}
+@media screen and (min-width: 1200px) {
+  .hero {
+    min-width: 1200px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
 }
 
 /* .hero-container{} */

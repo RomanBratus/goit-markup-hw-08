@@ -34,11 +34,25 @@
 .hero-title {
   color: var(--additional-text-color);
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 26px;
+  line-height: 1.6;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+
+
+  @media screen and(min-width: 480px) {
+    width: 360px;
+    height: 84px;
+  }
+
+  @media screen and(min-width: 1200px) {
+    font-size: 44px;
+    line-height: 1.36;
+
+    width: 969px;
+    height: 120px;
+  }
 }
 
 .main-button {
@@ -61,7 +75,7 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
 
-    @media screen and(max-width: 768px) {
+  @media screen and(max-width: 768px) {
     text-align: center;
   }
 }
@@ -130,7 +144,6 @@
   line-height: 1.25;
   letter-spacing: 0.003em;
 }
-
 
 // ! portfolio page ! //
 
