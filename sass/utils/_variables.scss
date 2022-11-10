@@ -8,6 +8,7 @@
   --background-color-additional: #2f303a;
   --background-color-special: #f5f4fa;
   --social-main-color: #afb1b8;
+  --bg-gradient: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
 }
 
 .hover-transition {
@@ -40,7 +41,6 @@
   letter-spacing: 0.06em;
   text-transform: uppercase;
 
-
   @include mobile {
     width: 360px;
     height: 84px;
@@ -66,17 +66,17 @@
 }
 
 /* title in section 3 and 4  */
-.img-section-title, 
-.our-team-title, 
-.partners-title{
-    color: var(--primery-text-color);
-    font-weight: 700;
-    font-size: 28px;
-    line-height: 1.14;
-    text-align: center;
-    letter-spacing: 0.03em;
+.img-section-title,
+.our-team-title,
+.partners-title {
+  color: var(--primery-text-color);
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.14;
+  text-align: center;
+  letter-spacing: 0.03em;
 
-    @include desktop {
+  @include desktop {
     font-size: 36px;
     line-height: 1.16;
   }
@@ -122,7 +122,6 @@
   line-height: 1.18;
   text-align: center;
   letter-spacing: 0.03em;
-  
 }
 
 .our-team__text {
