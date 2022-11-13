@@ -54,8 +54,9 @@
 
 .hero-title {
   color: var(--additional-text-color);
+  width: 290px;
   font-weight: 900;
-  font-size: 26px;
+  font-size: 20px;
   line-height: 1.6;
   text-align: center;
   letter-spacing: 0.06em;
@@ -65,6 +66,7 @@
   .hero-title {
     width: 360px;
     height: 84px;
+    font-size: 26px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -783,9 +785,12 @@ img {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  padding: 118px 60px;
+  /* @include retina {
+    background-image: var(--bg-gradient), url(../images/hero-mobile-2x.jpeg);
+  } */
+  padding: 118px 0;
 }
-@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+@media screen and (min-width: 480px) {
   .hero {
     background-image: var(--bg-gradient), url(../images/hero-mobile-2x.jpeg);
   }
