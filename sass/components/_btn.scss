@@ -17,3 +17,31 @@
     border-radius: 4px;
   }
 }
+
+.mobile-menu-btn{
+  cursor: pointer;
+  border-style: none;
+  background-color: purple;
+  width: 40px;
+  height: 40px;
+  margin-left: auto;
+
+  &:hover,
+  &:focus {
+    fill: #188ce8;
+    
+  }
+}
+
+.mobile-menu-close{
+  cursor: pointer;
+  border-style: none;
+  background-color: red;
+  position: absolute;
+  padding: 0;
+  width: 40px;
+  height: 40px;
+
+  top: 10px;
+  right: 18px;
+}

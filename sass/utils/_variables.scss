@@ -31,6 +31,14 @@
   color: var(--paragraph-tex-color);
 }
 
+.mobile-nav__link {
+  color: var(--primery-text-color);
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+}
+
 // * hero font
 .hero-title {
   color: var(--additional-text-color);

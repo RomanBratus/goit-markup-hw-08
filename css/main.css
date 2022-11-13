@@ -52,6 +52,14 @@
   color: var(--paragraph-tex-color);
 }
 
+.mobile-nav__link {
+  color: var(--primery-text-color);
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+}
+
 .hero-title {
   color: var(--additional-text-color);
   width: 290px;
@@ -290,6 +298,30 @@ img {
   background: #188ce8;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+}
+
+.mobile-menu-btn {
+  cursor: pointer;
+  border-style: none;
+  background-color: purple;
+  width: 40px;
+  height: 40px;
+  margin-left: auto;
+}
+.mobile-menu-btn:hover, .mobile-menu-btn:focus {
+  fill: #188ce8;
+}
+
+.mobile-menu-close {
+  cursor: pointer;
+  border-style: none;
+  background-color: red;
+  position: absolute;
+  padding: 0;
+  width: 40px;
+  height: 40px;
+  top: 10px;
+  right: 18px;
 }
 
 /* "web" and "studio" style logo (in header and footer) */
@@ -623,18 +655,21 @@ img {
 /* header navigation options (налаштування шапки) */
 .topbar {
   border-bottom: 1px solid #ececec;
-  display: none;
-}
-@media screen and (min-width: 768px) {
-  .topbar {
+  position: relative;
+  /* @include tablet {
     display: contents;
-  }
+  } */
 }
 
 .topbar-flex {
   box-sizing: border-box;
   display: flex;
-  justify-content: center;
+  align-items: center;
+}
+@media screen and (min-width: 768px) {
+  .topbar-flex {
+    justify-content: center;
+  }
 }
 
 .topbar-navigation__list {
@@ -657,10 +692,11 @@ img {
 
 .topbar-navigation__list {
   gap: 50px;
-  /* margin-left: 93px; */
+  display: none;
 }
 @media screen and (min-width: 768px) {
   .topbar-navigation__list {
+    display: inherit;
     margin-left: 88px;
   }
 }
@@ -733,20 +769,16 @@ img {
 
 /* ----------------------------- header contacts ----------------------------- */
 /* header contacts list options (налаштування списку контактів) */
-.topbar-contacts__group {
-  display: flex;
-  /*   margin-left: 96px; */
-}
-
 .topbar-contacts__list {
   list-style: none;
-  display: flex;
+  display: none;
   flex-direction: column;
   justify-content: center;
   gap: 10px;
 }
 @media screen and (min-width: 768px) {
   .topbar-contacts__list {
+    display: flex;
     margin-left: auto;
   }
 }
@@ -756,6 +788,10 @@ img {
     gap: 30px;
     margin-left: auto;
   }
+}
+
+.topbar-contacts__group {
+  display: flex;
 }
 
 /* header contacts color and hover (налаштування контактів в шапці) */
@@ -777,6 +813,31 @@ img {
 
 .topbar-contacts__icon {
   margin-right: 10px;
+}
+
+.mobile-menu {
+  /* display: none; */
+  position: fixed;
+  z-index: 3;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--additional-text-color);
+  padding-left: 40px;
+  padding-bottom: 48px;
+}
+
+.mobile-nav__list,
+.mobile-contacts__list {
+  list-style: none;
+}
+
+.mobile-nav__list {
+  margin-top: 48px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
 }
 
 .hero {

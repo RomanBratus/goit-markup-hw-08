@@ -2,17 +2,21 @@
 /* header navigation options (налаштування шапки) */
 .topbar {
   border-bottom: 1px solid #ececec;
-  display: none;
+  position: relative;
 
-  @include tablet {
+  /* @include tablet {
     display: contents;
-  }
+  } */
 }
 
 .topbar-flex {
   box-sizing: border-box;
   display: flex;
-  justify-content: center;
+  align-items: center;
+
+  @include tablet {
+    justify-content: center;
+  }
 }
 
 .topbar-navigation__list {
@@ -34,9 +38,10 @@
 
 .topbar-navigation__list {
   gap: 50px;
-  /* margin-left: 93px; */
+  display: none;
 
   @include tablet {
+    display: inherit;
     margin-left: 88px;
   }
   @include desktop {
@@ -109,20 +114,17 @@
 /* ----------------------------- header contacts ----------------------------- */
 
 /* header contacts list options (налаштування списку контактів) */
-.topbar-contacts__group {
-  display: flex;
-  /*   margin-left: 96px; */
-}
 
 .topbar-contacts__list {
   list-style: none;
-  display: flex;
+  display: none;
   flex-direction: column;
   justify-content: center;
 
   gap: 10px;
 
   @include tablet {
+    display: flex;
     margin-left: auto;
   }
 
@@ -131,6 +133,10 @@
     gap: 30px;
     margin-left: auto;
   }
+}
+
+.topbar-contacts__group {
+  display: flex;
 }
 
 /* header contacts color and hover (налаштування контактів в шапці) */
@@ -156,4 +162,32 @@
 
 .topbar-contacts__icon {
   margin-right: 10px;
+}
+
+.mobile-menu {
+  /* display: none; */
+  position: fixed;
+  z-index: 3;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--additional-text-color);
+  padding-left: 40px;
+  padding-bottom: 48px;
+}
+
+.mobile-nav__list,
+.mobile-contacts__list {
+  list-style: none;
+}
+
+.mobile-nav__list{
+  margin-top: 48px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.mobile-nav__group{
 }
