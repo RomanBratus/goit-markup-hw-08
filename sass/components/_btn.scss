@@ -18,7 +18,7 @@
   }
 }
 
-.mobile-menu-btn{
+.mobile-menu-btn {
   cursor: pointer;
   border-style: none;
   background-color: purple;
@@ -28,12 +28,14 @@
 
   &:hover,
   &:focus {
-    fill: #188ce8;
-    
+    fill: var(--text-hover-color);
+  }
+  @include tablet {
+    display: none;
   }
 }
 
-.mobile-menu-close{
+.mobile-menu-close {
   cursor: pointer;
   border-style: none;
   background-color: red;
@@ -41,7 +43,13 @@
   padding: 0;
   width: 40px;
   height: 40px;
+  fill: var(--paragraph-tex-color);
 
   top: 10px;
   right: 18px;
+
+  &:hover,
+  &:focus {
+    fill: var(--text-hover-color);
+  }
 }
