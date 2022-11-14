@@ -81,100 +81,104 @@
         <button
           type="button"
           class="mobile-menu-btn hover-transition"
-          data-modal-open
+          data-Menu-open
         >
           <svg class="modal-icon" width="18" height="18">
             <use href="./images/icomoon/symbol-defs.svg#icon-mobile-menu"></use>
           </svg>
         </button>
       </div>
-      <div class="mobile-menu is-hidden" data-modal>
+      <div class="mobile-menu is-hidden" data-Menu>
         <button
           type="button"
           class="mobile-menu-close hover-transition"
-          data-modal-close
+          data-Menu-close
         >
           <svg class="modal-icon" width="18" height="18">
             <use href="./images/icomoon/symbol-defs.svg#icon-close-btn"></use>
           </svg>
         </button>
-        <ul class="mobile-nav__list">
-          <li class="mobile-nav__group">
-            <a
-              href="./index.html"
-              class="link-options mobile-nav__link hover-transition active-mobile"
-              >Студія</a
-            >
-          </li>
-          <li class="mobile-nav__group">
-            <a
-              href="./portfolio.html"
-              class="link-options mobile-nav__link hover-transition"
-              >Портфоліо</a
-            >
-          </li>
-          <li class="mobile-nav__group">
-            <a href="#" class="link-options mobile-nav__link hover-transition"
-              >Контакти</a
-            >
-          </li>
-        </ul>
-        <ul class="mobile-contacts__list">
-          <li class="mobile-contacts__group">
-            <a
-              href="tel:+380961111111"
-              class="link-options mobile-contacts__tel hover-transition"
-            >
-              +38 096 111 11 11</a
-            >
-          </li>
-          <li class="mobile-contacts__group">
-            <a
-              href="mailto:info@devstudio.com"
-              class="link-options mobile-contacts__mail hover-transition"
-            >
-              info@devstudio.com</a
-            >
-          </li>
-        </ul>
-        <ul class="mobile-social">
-          <li class="mobile-social__item">
-            <a
-              href="#"
-              class="link-options mobile-social__link"
-              target="_blank"
-              rel="noopener noreferrer nofollow"
-              >Instagram</a
-            >
-          </li>
-          <li class="mobile-social__item">
-            <a
-              href="#"
-              class="link-options mobile-social__link"
-              target="_blank"
-              rel="noopener noreferrer nofollow"
-              >Twitter</a
-            >
-          </li>
-          <li class="mobile-social__item">
-            <a
-              href="#"
-              class="link-options mobile-social__link"
-              target="_blank"
-              rel="noopener noreferrer nofollow"
-              >Facebook</a
-            >
-          </li>
-          <li class="mobile-social__item">
-            <a
-              href="#"
-              class="link-options mobile-social__link"
-              target="_blank"
-              rel="noopener noreferrer nofollow"
-              >LinkedIn</a
-            >
-          </li>
-        </ul>
+        <div class="mobile-container">
+          <ul class="mobile-nav__list">
+            <li class="mobile-nav__group">
+              <a
+                href="./index.html"
+                class="link-options mobile-nav__link hover-transition mobile-active"
+                >Студія</a
+              >
+            </li>
+            <li class="mobile-nav__group">
+              <a
+                href="./portfolio.html"
+                class="link-options mobile-nav__link hover-transition"
+                >Портфоліо</a
+              >
+            </li>
+            <li class="mobile-nav__group">
+              <a href="#" class="link-options mobile-nav__link hover-transition"
+                >Контакти</a
+              >
+            </li>
+          </ul>
+          <div>
+            <ul class="mobile-contacts__list">
+              <li class="mobile-contacts__group">
+                <a
+                  href="tel:+380961111111"
+                  class="link-options mobile-contacts__tel hover-transition"
+                >
+                  +38 096 111 11 11</a
+                >
+              </li>
+              <li class="mobile-contacts__group">
+                <a
+                  href="mailto:info@devstudio.com"
+                  class="link-options mobile-contacts__mail hover-transition"
+                >
+                  info@devstudio.com</a
+                >
+              </li>
+            </ul>
+            <ul class="mobile-social">
+              <li class="mobile-social__item">
+                <a
+                  href="#"
+                  class="link-options mobile-social__link"
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                  >Instagram</a
+                >
+              </li>
+              <li class="mobile-social__item">
+                <a
+                  href="#"
+                  class="link-options mobile-social__link"
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                  >Twitter</a
+                >
+              </li>
+              <li class="mobile-social__item">
+                <a
+                  href="#"
+                  class="link-options mobile-social__link"
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                  >Facebook</a
+                >
+              </li>
+              <li class="mobile-social__item">
+                <a
+                  href="#"
+                  class="link-options mobile-social__link"
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                  >LinkedIn</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </header>
     <!-- Основний контент сторінки -->
@@ -942,5 +946,6 @@
     </footer>
 
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
