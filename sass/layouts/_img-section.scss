@@ -2,8 +2,8 @@
   display: none;
 
   @include desktop {
-    display: contents;
-    padding-top: 94px;
+    display: inherit;
+    padding-top: 0;
   }
 }
 

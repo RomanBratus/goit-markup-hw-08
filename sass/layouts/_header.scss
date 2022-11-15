@@ -187,6 +187,7 @@
 
 .mobile-container {
   display: flex;
+  justify-content: baseline;
   flex-direction: column;
   justify-content: space-between;
 }

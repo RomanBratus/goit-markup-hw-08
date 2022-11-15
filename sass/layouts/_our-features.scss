@@ -1,10 +1,9 @@
 /* -==================== our-features (текст під банером) ==================== */
 .our-features {
-  /*   padding: 94px 0; */
   padding: 60px 0;
 
   @include desktop {
-    padding-top: 94px;
+    padding: 94px 0;
   }
 }
 

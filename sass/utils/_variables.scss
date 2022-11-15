@@ -147,8 +147,19 @@
   }
 }
 
+.our-features-title,
+.img-section__label {
+  @include tablet {
+    text-align: left;
+  }
+}
+
 .basement__subtitle {
   color: var(--additional-text-color);
+
+  @include tablet {
+    text-align: center;
+  }
 }
 
 //* paragraph font (налаштування параграфу)
