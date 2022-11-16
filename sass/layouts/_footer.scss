@@ -19,7 +19,7 @@
   @include tablet {
     flex-direction: row;
     flex-wrap: wrap;
-    gap: none;
+    gap: 0;
   }
 
   @include desktop {
