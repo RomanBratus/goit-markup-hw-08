@@ -320,20 +320,42 @@ img {
   width: 100%;
 }
 
-.container {
+/* .container {
   width: 100%;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
+
+  @include mobile {
+    width: 480px;
+  }
+
+  @include tablet {
+    width: 768px;
+  }
+
+  @include desktop {
+    width: 1200px;
+  }
+} */
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding-left: 16px;
+  padding-right: 16px;
 }
 @media screen and (min-width: 480px) {
   .container {
-    width: 480px;
+    width: 320px;
+    /* padding-left: 16px;
+    padding-right: 16px; */
   }
 }
 @media screen and (min-width: 768px) {
   .container {
     width: 768px;
+    padding-left: 40px;
+    padding-right: 40px;
   }
 }
 @media screen and (min-width: 1200px) {
